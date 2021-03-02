@@ -1,2 +1,2 @@
-# imbalance
+# Imbalance Learning with Knowledge distillation
 
