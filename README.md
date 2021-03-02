@@ -1,2 +1,3 @@
-# Imbalance Learning with Knowledge distillation
-
+# Imbalance Learning by Uncertainty-weighted Knowledge distillation
+This repo is an implementation of my naive insight about uncertainty-weighted crossentropy. The initial idea is only one-stage training, however it doesn't work. I consider it due to the strong impact on the crossentropy between target and model output probability. After that, I choose to soften the target and other loss implementation. All failed.
+Therefore, I choose knowledge distillation to generate the soft label and uncertainty, meanwhile we use the uncertainty to reweight the student's crossentropy. Finally, it improves a lot. Esp, the recall of the least sample class improve by 13%. But, the overall mean recall doesn't have some obvious performance.
